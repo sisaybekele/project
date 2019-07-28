@@ -1,4 +1,4 @@
-package com.project.java.project;
+package com.project.java.base;
 
 public abstract class Widget implements  WidgetInterface {
     private SurfaceColor color;

@@ -1,4 +1,4 @@
-package com.project.java.project;
+package com.project.java.base;
 
 public interface WidgetInterface {
     public  String  getGears();

@@ -1,12 +1,12 @@
-package com.project.java.project;
+package com.project.java.base;
 
-import sun.security.x509.SerialNumber;
+import com.project.java.singleton.SerialNumber;
 
 public class WidgetLarge extends  Widget {
     public WidgetLarge(SurfaceColor color){
         super(color);
         this.serialNumber = SerialNumber.getInstance()
-                .getNextSerial(SerialNumber.ProductType.LargeWidget);
+                .getNextSerial(ProductType.WidgetLarge);
     }
 
     @Override

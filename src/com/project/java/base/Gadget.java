@@ -1,14 +1,15 @@
-package com.project.java.project;
+package com.project.java.base;
 
 public abstract class Gadget implements GadgetInterface {
-    protected  WidgetInterface iWidgets;
+    protected  WidgetInterface Widget;
     private  SurfaceColor color;
     protected String serialNumber;
+
 
     public Gadget(){
         this(SurfaceColor.PLAIN);
         }
-        public Gadget(SurfaceColor color){
+        public Gadget(SurfaceColor color) {
         this.color = color;
     }
     public SurfaceColor getColor(){
@@ -24,4 +25,6 @@ public abstract class Gadget implements GadgetInterface {
     public String toString() {
         return getClass().getSimpleName()+"was added to the order";
     }
+
+
 }
